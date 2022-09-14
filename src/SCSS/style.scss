@@ -1,1 +1,55 @@
 @import "~bootstrap/scss/bootstrap";
+body{
+    background-image: url("../assets/images/mainPicture.jpg");
+    background-size: 140%;
+    background-repeat: no-repeat;
+}
+.meals{
+   
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+   
+   
+    div {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 2rem;
+        color: white;
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+        border-radius: 2rem;
+  
+    }
+    .hot-meals{
+        background-image: url('../assets/images/hotMeals.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .salads{
+        background-image: url('../assets/images/saladjpg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .desserts{
+        background-image: url('../assets/images/desserts.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .breakfasts{
+        background-image: url('../assets/images/breackfasts.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+.catagory{
+    .general-information{
+        padding: 1rem;
+    }
+    padding: 1rem;
+    margin-top: 6rem;
+    background-color: white;
+    border-radius: 3rem;
+}

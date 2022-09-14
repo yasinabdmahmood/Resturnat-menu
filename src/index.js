@@ -1,2 +1,1 @@
 import './SCSS/style.scss'
-
