@@ -24,24 +24,30 @@ body{
   
     }
     .hot-meals{
-        background-image: url('../assets/images/hotMeals.jpg');
+        background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/images/hotMeals.jpg');
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: 50%;
     }
     .salads{
-        background-image: url('../assets/images/saladjpg.jpg');
+        background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/images/saladjpg.jpg');
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: 50%;
     }
     .desserts{
-        background-image: url('../assets/images/desserts.jpg');
+        background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/images/desserts.jpg');
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: 50%;
     }
     .breakfasts{
-        background-image: url('../assets/images/breackfasts.jpg');
+        
+        background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/images/breackfasts.jpg');
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: 50%;
+        
     }
 }
 .catagory{
