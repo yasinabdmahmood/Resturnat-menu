@@ -27,6 +27,7 @@ module.exports = {
       title: 'Javascript capstone',
       template: './src/template.html',
       filename: 'index.html',
+      assetModuleFilename: 'assets/images/[name][ext][query]'
     }),
   ],
   module: {
@@ -39,10 +40,11 @@ module.exports = {
         test: /\.scss$/i,
         use: ['style-loader', 'css-loader', 'sass-loader'],
       },
-      // {
-      //   test: /\.(png|svg|jpg|jpeg|gif)$/i,
-      //   type: 'asset/resource',
-      // },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
+       
+      },
       {
         test: /\.(png|jpe?g|gif)$/i,
         loader: 'file-loader',
