@@ -1,4 +1,9 @@
 @import "~bootstrap/scss/bootstrap";
+@mixin bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
 body{
     background-image: url("../assets/images/mainPicture.jpg");
     background-size: 140%;
@@ -12,7 +17,7 @@ body{
     row-gap: 2rem;
    
    
-    div {
+    .meal {
         box-sizing: border-box;
         width: 100%;
         padding: 2rem;
@@ -21,32 +26,27 @@ body{
         font-weight: 700;
         text-align: center;
         border-radius: 2rem;
+       
   
     }
     .hot-meals{
         background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/images/hotMeals.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: 50%;
+        @include bg;
     }
     .salads{
         background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/images/saladjpg.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: 50%;
+        @include bg;
     }
     .desserts{
         background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/images/desserts.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: 50%;
+        @include bg;
     }
+        
     .breakfasts{
         
         background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/images/breackfasts.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: 50%;
+        @include bg;
+       
         
     }
 }
