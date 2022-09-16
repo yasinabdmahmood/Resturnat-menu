@@ -97,26 +97,58 @@
         order:0
     },
     {
-        src:'./assets/images/borscht.jpg',
-        name:'Borscht',
-        discription:'Beetroot borsch with bacon and donuts',
+        src:'./assets/images/Cheesecake.jpg',
+        name:'Cheesecake',
+        discription:'Temporarily unavailable',
+        price:4.99,
+        order:0
+    },
+    {
+        src:'./assets/images/BerryIceCream.jpg',
+        name:'Berry ice cream',
+        discription:'Natural ice cream made from berries',
+        price:2.25,
+        order:0
+    },
+    
+ ]
+ const ar4=[
+    {
+        src:'./assets/images/FullEnglishBreakfast.jpg',
+        name:'Full English breakfast',
+        discription:'Fried eggs, bacon, toast, cherry tomatoes',
+        price:6.99,
+        order:0
+    },
+    {
+        src:'./assets/images/Oatmeal.jpg',
+        name:'Oatmeal',
+        discription:'Oatmeal with seasonal berries and berry syrup',
+        price:3.25,
+        order:0
+    },
+    {
+        src:'./assets/images/Cheesepancakeswithstrawberryjam.jpg',
+        name:'Cheese pancakes with strawberry jam',
+        discription:'Fresh cottage cheese pancakes with strawberry jam and sour cream',
         price:4.6,
         order:0
     },
     {
-        src:'./assets/images/fishPancake.jpg',
-        name:'Fish pancakes',
-        discription:'Beef, lettuce, pickle, tomato, soft bun',
-        price:6.5,
+        src:'./assets/images/AvocadoToast.jpg',
+        name:'Avocado toast',
+        discription:'Rye toast with avocado and boiled egg',
+        price:2.15,
         order:0
     },
     {
-        src:'./assets/images/hotRolls.jpg',
-        name:'Hot rolls',
-        discription:'Temporarily unavailable',
-        price:4.9,
+        src:'./assets/images/Catfishonpumpkinpuree.jpg',
+        name:'Catfish on pumpkin puree',
+        discription:'Catfish fillet baked with young potatoes. Served with salad and pumpkin puree',
+        price:6.5,
         order:0
     },
+   
  ]
  const catagories=[
     {
@@ -141,6 +173,7 @@
         id:3,
         name:"BEAKFASTS",
         src:'./assets/images/breackfasts.jpg',
+        list:ar4,
     },
     
 ]
