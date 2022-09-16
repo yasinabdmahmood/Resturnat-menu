@@ -74,6 +74,50 @@
     },
    
  ]
+ const ar3=[
+    {
+        src:'./assets/images/RaspberryMousse.jpg',
+        name:'Raspberry mousse',
+        discription:'Raspberry mousse with cream and raspberry syrup',
+        price:3.25,
+        order:0
+    },
+    {
+        src:'./assets/images/VanillaIceCream.jpg',
+        name:'SoVanilla ice creamup',
+        discription:'Vanilla ice cream with chocolate filling',
+        price:2.5,
+        order:0
+    },
+    {
+        src:'./assets/images/BrownieWithRaspberries.jpg',
+        name:'Brownie with raspberries',
+        discription:'Chocolate brownie with fresh raspberries',
+        price:4.75,
+        order:0
+    },
+    {
+        src:'./assets/images/borscht.jpg',
+        name:'Borscht',
+        discription:'Beetroot borsch with bacon and donuts',
+        price:4.6,
+        order:0
+    },
+    {
+        src:'./assets/images/fishPancake.jpg',
+        name:'Fish pancakes',
+        discription:'Beef, lettuce, pickle, tomato, soft bun',
+        price:6.5,
+        order:0
+    },
+    {
+        src:'./assets/images/hotRolls.jpg',
+        name:'Hot rolls',
+        discription:'Temporarily unavailable',
+        price:4.9,
+        order:0
+    },
+ ]
  const catagories=[
     {
         id:0,
@@ -91,6 +135,7 @@
         id:2,
         name:"DESSERTS",
         src:'./assets/images/desserts.jpg',
+        list:ar3,
     },
     {
         id:3,
