@@ -8,6 +8,17 @@ body{
     background-image: url("../assets/images/mainPicture.jpg");
     background-size: 140%;
     background-repeat: no-repeat;
+    .arrow{
+        position:fixed;
+        left: 1rem;
+        top:1rem;
+        width: 40px;
+        background-color: rgb(211, 24, 24);
+        border-radius: 20px;
+        display: none;
+        z-index: 1;
+        
+    }
 }
 .meals{
    
