@@ -21,12 +21,13 @@ const orderList={
     },
     remove:(obj)=>{
        const index=orderList.getIndex(obj);
-       if(orderList.list[index].order<=0){
+       orderList.list[index].order-=1;
+       if(orderList.list[index].order<1){
            orderList.list.splice(index, 1);
            return 0
        }
        else{
-           orderList.list[index].order-=1;
+          
            return  orderList.list[index].order
        }
     }

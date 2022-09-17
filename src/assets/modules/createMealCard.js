@@ -1,4 +1,4 @@
-const createMealCard=(el,id,index)=>{
+const createMealCard=(el,id='no',index)=>{
     let visibility=false
     if(el.order>0){
         visibility=true;
