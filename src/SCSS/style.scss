@@ -5,6 +5,7 @@
     background-position: 50%;
   }
 body{
+    margin-bottom: 70px;
     background-image: url("../assets/images/mainPicture.jpg");
     background-size: 140%;
     background-repeat: no-repeat;
@@ -145,7 +146,13 @@ body{
     font-size: 1.5rem;
     font-weight: 700;
     padding: 1rem;
+    z-index: 2;
 }
 .orders{
     display:none;
+    padding: 2rem;
+    .card{
+        padding: 1rem;
+        margin-top: 1rem;
+    }
 }
