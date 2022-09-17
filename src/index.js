@@ -3,6 +3,7 @@ import catagories from './assets/modules/data_base.js';
 import createCatagories from './assets/modules/createCatagories.js';
 import populateMeals from './assets/modules/populateMeals.js';
 document.body.style.backgroundImage='url(./assets/images/mainPicture.jpg)' ;
+document.querySelector('.arrow').src="./assets/images/arrow-left.svg";
 
 
 const meals=createCatagories(catagories);

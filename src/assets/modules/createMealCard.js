@@ -5,11 +5,11 @@ const createMealCard=(el)=>{
     <p>${el.discription}</p>
     <div class="price-order">
         <div class="price">${el.price} $</div>
-        <div class="pl">+</div>
+        <div class="pl"><img src="./assets/images/plus-circle.svg" alt=""></div>
         <div class="quantity">
-            <span class="minus">-</span>
+            <span class="minus"><img src="./assets/images/dash.svg" alt=""></span>
             <span class="order-number">${el.order}</span>
-            <span class="plus">+</span>
+            <span class="plus"><img src="./assets/images/plus.svg" alt=""></span>
         </div>
     </div>
 </div>`;
