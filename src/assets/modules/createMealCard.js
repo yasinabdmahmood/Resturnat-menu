@@ -1,5 +1,5 @@
-const createMealCard=(el)=>{
-    const card= ` <div class="card">
+const createMealCard=(el,id,index)=>{
+    const card= ` <div class="card" id2=${index} cat=${id}>
     <h2>${el.name}</h2>
     <img src=${el.src} alt="">
     <p>${el.discription}</p>
