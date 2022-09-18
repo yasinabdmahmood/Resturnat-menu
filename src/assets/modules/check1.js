@@ -1,6 +1,7 @@
 import catagories from "./data_base.js";
 import populateMeals from "./populateMeals.js";
 import orderList from "./orderList.js";
+import check2 from './check2.js'
 const plIcon=(e)=>{
     const card=e.target.parentNode.parentNode.parentNode;
     const cardInfo=catagories[parseInt(card.getAttribute('cat'))].list[parseInt(card.getAttribute('id2'))];
@@ -10,13 +11,15 @@ const plIcon=(e)=>{
     card.querySelector('.order-number').innerHTML=order
     card.querySelector('.pl').style.display='none';
     card.querySelector('.quantity').style.display='flex';
+    check2();
 }
 const plusIcon=(e)=>{
     const card=e.target.parentNode.parentNode.parentNode.parentNode;
     const cardInfo=catagories[parseInt(card.getAttribute('cat'))].list[parseInt(card.getAttribute('id2'))];
     const order=orderList.add(cardInfo);
     card.querySelector('.order-number').innerHTML=order
-    console.log(orderList.list)
+    console.log(orderList.list);
+    check2();
 
 }
 const minusIcon=(e)=>{
@@ -32,7 +35,7 @@ const minusIcon=(e)=>{
     else{
         card.querySelector('.order-number').innerHTML=order
     }
-    
+    check2();
 }
 const check1=()=>{
    if(document.querySelector('.second-page').innerHTML===""){
@@ -62,6 +65,7 @@ const check1=()=>{
     document.querySelector('.meals').style.display='flex';
     document.querySelector('.second-page').style.display='none';
     document.querySelector('.arrow').style.display="none";
+    document.querySelector('.second-page').innerHTML="";
    }
    document.querySelector('.orders').style.display="none";
 }

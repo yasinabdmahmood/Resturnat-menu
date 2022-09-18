@@ -4,7 +4,8 @@ import createCatagories from './assets/modules/createCatagories.js';
 import populateMeals from './assets/modules/populateMeals.js';
 import orderList from './assets/modules/orderList.js';
 import displayOrder from './assets/modules/displayOrder.js';
-import check1 from './assets/modules/check1.js'
+import check1 from './assets/modules/check1.js';
+import check2 from './assets/modules/check2.js'
 document.body.style.backgroundImage='url(./assets/images/mainPicture.jpg)' ;
 document.querySelector('.arrow').src="./assets/images/arrow-left.svg";
 const plIcon=(e)=>{
@@ -16,6 +17,7 @@ const plIcon=(e)=>{
     card.querySelector('.order-number').innerHTML=order
     card.querySelector('.pl').style.display='none';
     card.querySelector('.quantity').style.display='flex';
+    check2();
 }
 const plusIcon=(e)=>{
     const card=e.target.parentNode.parentNode.parentNode.parentNode;
@@ -23,6 +25,7 @@ const plusIcon=(e)=>{
     const order=orderList.add(cardInfo);
     card.querySelector('.order-number').innerHTML=order
     console.log(orderList.list)
+    check2();
 
 }
 const minusIcon=(e)=>{
@@ -38,7 +41,7 @@ const minusIcon=(e)=>{
     else{
         card.querySelector('.order-number').innerHTML=order
     }
-    
+    check2();
 }
 
 const meals=createCatagories(catagories);

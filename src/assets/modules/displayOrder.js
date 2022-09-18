@@ -1,5 +1,6 @@
 import orderList from "./orderList.js";
 import createMealCard from './createMealCard.js';
+import check2 from "./check2.js";
 const plIcon=(e)=>{
     const card=e.target.parentNode.parentNode.parentNode.querySelector('h2').innerHTML;
     const name=card.querySelector('h2').innerHTML;
@@ -13,6 +14,7 @@ const plIcon=(e)=>{
     card.querySelector('.order-number').innerHTML=order
     card.querySelector('.pl').style.display='none';
     card.querySelector('.quantity').style.display='flex';
+    check2()
 }
 const plusIcon=(e)=>{
     const card=e.target.parentNode.parentNode.parentNode.parentNode;
@@ -24,6 +26,7 @@ const plusIcon=(e)=>{
     const order=orderList.add(cardInfo);
     card.querySelector('.order-number').innerHTML=order
     console.log(orderList.list)
+    check2()
 
 }
 const minusIcon=(e)=>{
@@ -40,7 +43,7 @@ const minusIcon=(e)=>{
     else{
         card.querySelector('.order-number').innerHTML=order
     }
-    
+    check2()
 }
 
 const populateMeals=(data)=>{
@@ -53,6 +56,7 @@ const populateMeals=(data)=>{
 
 const displayOrder=()=>{
     const dom=populateMeals(orderList.list)
+    document.querySelector('.arrow').style.display="block";
     document.querySelector('.orders').innerHTML=dom;
     document.querySelector('.orders').style.display='block';
     document.querySelector('.second-page').style.display='none';
